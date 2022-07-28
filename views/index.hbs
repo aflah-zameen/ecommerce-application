@@ -1,0 +1,20 @@
+<section>
+  <div class="container mt-5">
+    <div class="row">
+      {{#each product}}
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src={{this.img}}
+            class="card-img-top" alt="..." style="width: 10em ;height:8em">
+          <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <p class="card-text">PRICE :{{this.price}} CONDITION:{{this.condition}}</p>
+            <a href="#" class="btn btn-primary">ADD</a>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+  </div>
+</section>
